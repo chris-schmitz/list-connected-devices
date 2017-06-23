@@ -21,6 +21,12 @@ All that said, if you want to submit a PR to make it work on windows or linux I 
 This assumes you already have GeekTool installed.
 
 - Pull down this repository
+- Duplicate the file `example.config.js` and rename it `config.js`
+- For the devices you want to list, add objects to the `deviceIdMaps` config property
+    - The `name` is whatever text you want to show when a specific device is found
+    - The `macAddress` is the mac address for the specific device you want to find on the network
+        - [How do I find a computer's mac address??](https://www.google.com/search?q=how+do+I+find+a+computer%27s+mac+address%3F) ;P
+            - Just teasing. For a linux device (pi's) open a terminal, ssh into the device, and run `ifconfig`. The mac address is the `HWaddr` value.
 - Open GeekTool
 - Drag a new `shell` geeklet onto your desktop
 
