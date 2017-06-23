@@ -25,7 +25,7 @@ This assumes you already have GeekTool installed.
 - For the devices you want to list, add objects to the `deviceIdMaps` config property
     - The `name` is whatever text you want to show when a specific device is found
     - The `macAddress` is the mac address for the specific device you want to find on the network
-        - [How do I find a computer's mac address??](https://www.google.com/search?q=how+do+I+find+a+computer%27s+mac+address%3F) ;P
+        - [How do I find a computer's mac address??](http://lmgtfy.com/?q=how+do+I+find+a+computer%27s+mac+address%3F) ;P
             - Just teasing. For a linux device (pi's) open a terminal, ssh into the device, and run `ifconfig`. The mac address is the `HWaddr` value.
 - Open GeekTool
 - Drag a new `shell` geeklet onto your desktop
