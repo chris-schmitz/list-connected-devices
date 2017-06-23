@@ -17,7 +17,7 @@ function searchForKnownHosts(arpOutput) {
       return getMapForTargetLines(outputLine)
     })
     .filter(removeEmptyLines)
-    .reduce((carry, current) => carry.concat(current), [])
+    .reduce(flattenArray, [])
 
   return matches
 }
@@ -31,4 +31,8 @@ function getMapForTargetLines(outputLine) {
 
 function removeEmptyLines(line) {
   return line.length > 0
+}
+
+function flattenArray(carry, current) {
+  return carry.concat(current)
 }
